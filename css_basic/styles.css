@@ -13,8 +13,10 @@ main{
 
 article{
     flex: 2;
+    color: blue;
 }
 
 aside{
     flex: 1;
+    
 }
