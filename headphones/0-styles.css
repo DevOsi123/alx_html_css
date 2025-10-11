@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+}
+
+#header{
+    background-image: url(/headphones/images/headphones_hero_1.jpg);
+    width: auto;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    color: aliceblue;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav img{
+    cursor: pointer;
+}
+
+header nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+header nav ul li a{
+    margin-top: 10px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+}
+header nav ul li a:hover{
+    color:#FF6565;
+}
+
+.headline{
+    color:azure;
+    margin-left: 20px;
+}
+
+#headerLogo{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+   padding-top: 20px;
+}
+
+#section{
+    text-align: center;
+    margin-top: 250px;
+    height: 313px;
+}
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 90px;
+    background-color: #FF6565;
+    color: #fff;
+    font-weight: 600;
+    /* box-shadow: none; */
+    cursor: pointer;
+}
