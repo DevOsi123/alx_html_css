@@ -6,71 +6,63 @@
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
+    color: white;
 }
 
-#header{
+
+.header{
     background-image: url(/headphones/images/headphones_hero_1.jpg);
-    width: auto;
-    height: 800px;
+    background-position: center center;
     background-size: cover;
-    background-position: center;
-    color: aliceblue;
+    background-repeat: no-repeat;
 }
 
-header nav{
+.nav{
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    z-index: 1;
+}
+
+.nav_header{
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 40px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav img{
+.nav_menu_btn{
+    font-size: 1.5rem;
+    color: #fff;
     cursor: pointer;
 }
 
-header nav ul{
+.nav_links{
+    position: absolute;
+    top: 70px;
+    left: 0px;
+    width: 100%;
+    padding: 2rem;
     list-style-type: none;
     display: flex;
-    gap: 30px;
-}
-
-header nav ul li a{
-    margin-top: 10px;
-    text-decoration: none;
-    color: #fff;
-    font-weight: 600;
-    font-size: 1rem;
-}
-header nav ul li a:hover{
-    color:#FF6565;
-}
-
-.headline{
-    color:azure;
-    margin-left: 20px;
-}
-
-#headerLogo{
-    display: flex;
     align-items: center;
-    padding-left: 20px;
-   padding-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    transition: 0.5s;
+    z-index: 10;
+    transform: translateY(-100%);
 }
 
-#section{
-    text-align: center;
-    margin-top: 250px;
-    height: 313px;
+.nav_links.open{
+    transform: translateY(0);
 }
-button {
-    width: 150px;
-    height: 50px;
-    border-radius: 90px;
-    background-color: #FF6565;
-    color: #fff;
+
+.nav_links a{
     font-weight: 600;
-    /* box-shadow: none; */
-    cursor: pointer;
+    white-space: nowrap;
+    color: white;
+    transition: 0.3s;
 }
